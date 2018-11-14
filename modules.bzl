@@ -8,7 +8,6 @@ UTILS = [
 
 API = [
     "//core/api:onos-api",
-    "//incubator/api:onos-incubator-api",
 ]
 
 CORE = UTILS + API + [
@@ -18,9 +17,6 @@ CORE = UTILS + API + [
     "//core/store/serializers:onos-core-serializers",
     "//core/store/dist:onos-core-dist",
     "//core/store/persistence:onos-core-persistence",
-    "//incubator/net:onos-incubator-net",
-    "//incubator/store:onos-incubator-store",
-    "//incubator/rpc:onos-incubator-rpc",
     "//cli:onos-cli",
 
     "//protocols/openflow/api:onos-protocols-openflow-api",
@@ -78,7 +74,6 @@ FEATURES = [
     "//tools/package/features:onos-thirdparty-web",
     "//tools/package/features:onos-api",
     "//tools/package/features:onos-core",
-    "//tools/package/features:onos-incubator",
     "//tools/package/features:onos-cli",
     "//tools/package/features:onos-rest",
     "//tools/package/features:onos-gui",

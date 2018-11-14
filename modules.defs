@@ -8,7 +8,6 @@ UTILS = [
 
 API = [
     '//01-stable-onos/core/api:onos-api',
-    '//01-stable-onos/incubator/api:onos-incubator-api',
 ]
 
 CORE = UTILS + API + [
@@ -18,9 +17,6 @@ CORE = UTILS + API + [
     '//01-stable-onos/core/store/serializers:onos-core-serializers',
     '//01-stable-onos/core/store/dist:onos-core-dist',
     '//01-stable-onos/core/store/persistence:onos-core-persistence',
-    '//01-stable-onos/incubator/net:onos-incubator-net',
-    '//01-stable-onos/incubator/store:onos-incubator-store',
-    '//01-stable-onos/incubator/rpc:onos-incubator-rpc',
     '//01-stable-onos/cli:onos-cli',
 
     '//01-stable-onos/protocols/openflow/api:onos-protocols-openflow-api',
