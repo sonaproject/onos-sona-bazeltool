@@ -38,6 +38,11 @@ cp -R $MASTER_ONOS_APPS/openstackvtap $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacktroubleshoot $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/optical-model $LOCAL_APPS
 
+# copy tunnel app if it exists
+if [ -f $MASTER_ONOS_APPS/tunnel/api/BUILD ]; then
+  cp -R $MASTER_ONOS_APPS/tunnel $LOCAL_APPS
+fi
+
 # start to build sona and corresponding artifacts
 $BAZEL build onos
 
