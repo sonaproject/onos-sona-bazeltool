@@ -38,6 +38,9 @@ cp -R $MASTER_ONOS_APPS/openstacktelemetry $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstackvtap $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacktroubleshoot $LOCAL_APPS
 cp -R $STABLE_ONOS_APPS/optical-model $LOCAL_APPS
+cp -R $STABLE_ONOS_APPS/cpman $LOCAL_APPS
+cp -R $STABLE_ONOS_APPS/roadm $LOCAL_APPS
+cp -R $STABLE_ONOS_APPS/faultmanagement $LOCAL_APPS
 
 # copy tunnel app if it exists
 if [ -f $MASTER_ONOS_APPS/tunnel/api/BUILD ]; then
