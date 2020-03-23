@@ -9,3 +9,4 @@ if [ "$#" -lt 1 ]; then
 fi
 
 sed -i 's,https://repo1.maven.org/maven2,'$1',g' $STABLE_ONOS/tools/build/bazel/generate_workspace.bzl
+sed -i 's,https://repo.maven.apache.org/maven2,'$1',g' $STABLE_ONOS/tools/build/bazel/generate_workspace.bzl
