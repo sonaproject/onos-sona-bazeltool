@@ -25,10 +25,10 @@ if [ -f $STABLE_ONOS/onos.defs ]; then
 fi
 
 # copy modules.bzl to stable source (only valid for 2.0.X)
-if [ -f $STABLE_ONOS/tools/build/bazel/modules.bzl ]; then
-  rm -rf $STABLE_ONOS/tools/build/bazel/modules.bzl
-  cp modules.bzl $STABLE_ONOS/tools/build/bazel/
-fi
+#if [ -f $STABLE_ONOS/tools/build/bazel/modules.bzl ]; then
+#  rm -rf $STABLE_ONOS/tools/build/bazel/modules.bzl
+#  cp modules.bzl $STABLE_ONOS/tools/build/bazel/
+#fi
 
 # copy sona apps into the separated directory
 cp -R $MASTER_ONOS_APPS/openstacknetworking $LOCAL_APPS
@@ -48,7 +48,7 @@ if [ -f $MASTER_ONOS_APPS/tunnel/api/BUILD ]; then
 fi
 
 # start to build sona and corresponding artifacts
-$BAZEL build onos
+$BAZEL build onos --profile=sona
 
 # copy SONA artifacts into the sona-out directory
 rm -rf $SONA_OUT
