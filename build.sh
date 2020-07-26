@@ -48,7 +48,7 @@ if [ -f $MASTER_ONOS_APPS/tunnel/api/BUILD ]; then
 fi
 
 # start to build sona and corresponding artifacts
-$BAZEL build onos -define profile=sona
+$BAZEL build onos --define profile=sona
 
 # copy SONA artifacts into the sona-out directory
 rm -rf $SONA_OUT
